@@ -1,0 +1,19 @@
+<button id="버튼">버튼이에요</button>
+
+<script>
+
+  setTimeout(function (){console.log()}, 1000);
+
+  document.getElementById('버튼').addEventListener('click', function(){
+    console.log(this.innerHTML);
+    setTimeout(function (){ console.log(this.innerHTML) }, 1000);
+  });
+  //undefined
+
+  document.getElementById('버튼').addEventListener('click', function(){
+    console.log(this.innerHTML);
+    setTimeout(()=>{ console.log(this.innerHTML) }, 1000);
+  });
+  // 버튼이에요
+
+</script>

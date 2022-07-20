@@ -1,0 +1,17 @@
+<!-- 오브젝트 내의 데이터를 전부 더해주는 메소드만들기 -->
+
+<script>
+
+  var 자료 = { 
+    data : [1,2,3,4,5] 
+  }
+
+  자료.전부더하기 = function () {
+    var 합 = 0;
+    this.data.forEach(function (a) {
+      합 = 합 + a;
+    });
+    console.log(합)
+  }
+  자료.전부더하기();
+</script>
